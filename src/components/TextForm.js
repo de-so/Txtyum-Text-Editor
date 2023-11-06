@@ -97,8 +97,8 @@ export default function TextForm(props) {
             <div className='container my-3'>
                 <h4>Your text recipe</h4>
                 <div className="container">
-                    <p>{(text === '') ? 0 : text.replace(/[ ]+/g, ' ').trim().split(' ').length} words and {text.length} characters</p>
-                    <p>{(text === '') ? 0 : text.replace(/[ ]+/g, ' ').trim().split(' ').length * 0.008} minutes read</p>
+                    <p>{(text === '') ? 0 : text.replace(/\s+/g, ' ').trim().split(' ').length} words and {text.length} characters</p>
+                    <p>{(text === '') ? 0 : text.replace(/\s+/g, ' ').trim().split(' ').length * 0.008} minutes read</p>
                 </div>
                 <h4>Preview</h4>
                 <div className="container">
