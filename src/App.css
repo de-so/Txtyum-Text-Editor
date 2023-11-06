@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+html {
+  background: #f8f9fa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-dark {
+  background-color: black !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-light {
+  background-color: white !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.placeholder-dark::placeholder {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.placeholder-light::placeholder {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control {
+  resize: none;
+  overflow-x: hidden;
+}
+
+.accordion ::after {
+  filter: invert(100%);
+}
+
+#preview {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+.hide {
+  visibility: hidden;
+}
+.remove {
+  display: none;
+}
+.add {
+  display: block;
+}
+
+#preview::first-letter {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2378f7;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0167ff;
 }
