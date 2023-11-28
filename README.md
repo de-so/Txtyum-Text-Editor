@@ -1,1 +1,1 @@
-**Visit the Product:** [Click here](https://de-so.github.io/Txtyum-Text-Editor/)
+# [Txtyum-Text-Editor](https://de-so.github.io/Txtyum-Text-Editor/)
