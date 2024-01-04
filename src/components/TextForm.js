@@ -88,14 +88,14 @@ export default function TextForm(props) {
                 </div>
             </div>
             <div className="container my-2">
-                <h3>Generate random text</h3>
+                <h4>Generate random text</h4>
                 <div className='d-flex container'>
                     <input className={`form-control placeholder-${props.mode} m-1 bg-${props.mode} text-${props.mode === 'light' ? 'dark' : 'light'}`} id='generateText' placeholder='Number of characters' type="number" maxLength="4" min="1" />
                     <button className="btn btn-primary m-1" onClick={handleGenerateClick}>Generate</button>
                 </div>
             </div>
             <div className='container my-3'>
-                <h3>Your text recipe</h3>
+                <h4>Your text recipe</h4>
                 <div className="container">
                     <p>{(text === '') ? 0 : text.replace(/\s+/g, ' ').trim().split(' ').length} words and {text.length} characters</p>
                     <p>{(text === '') ? 0 : text.replace(/\s+/g, ' ').trim().split(' ').length * 0.008} minutes read</p>
